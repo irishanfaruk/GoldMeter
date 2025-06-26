@@ -2,7 +2,7 @@
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>GoldMeter</title>
+  <title>স্বর্ণ কনভার্টার</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -454,16 +454,16 @@
       const calculation = `
         ✅ মোট ভরি: <b>${totalVori.toFixed(4)} ভরি</b><br>
         📏 মোট পয়েন্ট: <b>${Math.round(totalPoint)}</b><br>
-        ⚖ মোট ওজন: <b>${totalGram.toFixed(3)} গ্রাম</b><br>
+        ⚖️ মোট ওজন: <b>${totalGram.toFixed(3)} গ্রাম</b><br>
         💰 স্বর্ণের দাম: ${rate} × ${totalVori.toFixed(4)} = <b>${goldCost.toFixed(2)} টাকা</b><br>
-        🛠 মজুরি (${wageUnit === "vori" ? "ভরি" : "আনা"} অনুযায়ী): <b>${makingCost.toFixed(2)} টাকা</b><br>
+        🛠️ মজুরি (${wageUnit === "vori" ? "ভরি" : "আনা"} অনুযায়ী): <b>${makingCost.toFixed(2)} টাকা</b><br>
         💵 মোট মূল্য: <b>${totalPrice.toFixed(2)} টাকা</b>
       `;
       let output = "";
       if (view === "summary") {
-        output = <b>💵 মোট মূল্য:</b> ${totalPrice.toFixed(2)} টাকা;
+        output = `<b>💵 মোট মূল্য:</b> ${totalPrice.toFixed(2)} টাকা`;
       } else {
-        output = explanation + <br> + calculation;
+        output = explanation + `<br>` + calculation;
       }
       document.getElementById("output").innerHTML = output;
     }
