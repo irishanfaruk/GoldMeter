@@ -157,13 +157,22 @@
       color: #ffd700;
     }
     @media (max-width: 600px) {
+      body {
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        min-height: 100vh !important;
+        width: 100vw !important;
+        background: #181818 !important;
+      }
       .container {
-        max-width: 100vw;
-        width: 100vw;
-        padding: 2vw 0vw 2vw 0vw;
-        margin: 0;
-        border-radius: 0;
-        box-shadow: none;
+        max-width: 100vw !important;
+        width: 100vw !important;
+        min-width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        background: #181818 !important;
       }
       h2 {
         font-size: 1.1rem;
@@ -474,3 +483,4 @@
   </script>
 </body>
 </html>
+
